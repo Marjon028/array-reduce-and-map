@@ -60,10 +60,13 @@ git push -u origin main*/
 <h1>array contents = {arr1}</h1>
 <h1>example of reduce array add whole data = {newArr1}</h1>
 <h1>example of map array *3 the contents = {newArr}</h1>
-
-
 {#each newArr as c ,i}
 <p>sorted: {sorted[i]} </p>
+  
+{/each}
+
+{#each newArr as c ,i}
+
 <h2>entries get value {entries[i]}</h2>
 {#if newArr[i]%2===0}
 <p>even {newArr[i]}</p>
